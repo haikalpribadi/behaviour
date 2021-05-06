@@ -1346,7 +1346,7 @@ Feature: TypeQL Define Query
       | label:person     |
       | label:employment |
 
-
+  @ignore-typedb
   Scenario: defining a key on an existing type is possible if existing instances have it and there are no collisions
     Given typeql define
       """

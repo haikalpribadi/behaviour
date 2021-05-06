@@ -708,7 +708,7 @@ Feature: TypeQL Match Query
       match $x iid <answer.x.iid>;
       """
 
-
+  @ignore-typedb
   Scenario: 'iid' does not match the instance with the specified internal iid with the wrong type
     Given typeql define
       """
